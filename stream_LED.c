@@ -13,7 +13,7 @@ int main()
     }
     while (1)
     {
-        char c =  fgetc(fin) > 128 ? '1' : '0';
+        char c =  fgetc(fin);
         if(c>128)
         {
             c = 1;
