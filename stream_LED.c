@@ -16,10 +16,10 @@ int main()
         char c =  fgetc(fin);
         if(c>128)
         {
-            c = 1;
+            c = 1 + '0';
         }
         else{
-            c=0;
+            c=0 + '0';
         }
         fputc(c, f_led);
         printf("%c\n", c + '0');
